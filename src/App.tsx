@@ -4,6 +4,16 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
+  return (
+    <div>
+      <Count></Count>
+      <Count></Count>
+      <Count></Count>
+    </div>
+  );
+}
+
+function Count() {
   const 리턴값 = useState(0);
   const count = 리턴값[0];
   const setCount = 리턴값[1];
@@ -26,4 +36,3 @@ function App() {
   );
 }
 export default App;
-//{count===0?}
