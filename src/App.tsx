@@ -4,11 +4,13 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
+  const 학교이름들 = ["경기고","성수고","창동고","숭신여고","양명여고"];
   return (
     <div>
-      <Count></Count>
-      <Count></Count>
-      <Count></Count>
+     {학교이름들.map((학교이름) =>(
+      <><h1>{학교이름}</h1>
+      <Count></Count></>
+     ))}
     </div>
   );
 }
